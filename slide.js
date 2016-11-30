@@ -29,14 +29,8 @@ document.addEventListener('keydown', function(evt) {
 
 });
 
-document.addEventListener('keydown', function(evt) {
+document.addEventListener('touchend', function(evt) {
   var backwards = false;
-
-  if (evt.keyCode === 37) {
-    backwards = true;
-  } else if (evt.keyCode !== 39) {
-    return;    
-  }
 
   var slides = document.getElementsByClassName('slide');
   var currentSlide = document.getElementsByClassName('visible-slide')[0];
