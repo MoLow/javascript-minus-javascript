@@ -29,7 +29,7 @@ document.addEventListener('keydown', function(evt) {
 
 });
 
-document.addEventListener('touchend', function(evt) {
+document.documentElement.addEventListener('touchend', function(evt) {
   var backwards = false;
 
   var slides = document.getElementsByClassName('slide');
